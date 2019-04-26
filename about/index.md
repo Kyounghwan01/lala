@@ -37,7 +37,7 @@ comments: false
     
     프로젝트 : 하이퍼레저 기반 건물 안전 점검 앱 (project 메뉴 참조)
    
-<img width="100" alt="hypermain" src="https://user-images.githubusercontent.com/44187477/56814502-4e45b200-687a-11e9-9660-39dc4d278e79.png">      
+![hyper](../../../blob/master/assets/img/qwe.png){:width="100" height="100"}
 
 #### 2. 공유경제 해커톤(19_02_15 대상)
     포지션 : react-native ui 개발
