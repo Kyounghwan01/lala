@@ -10,6 +10,6 @@ tag:
 - blog
 - about
 - theme
-comments: true
+comments: false
 ---
 test 입니다.
