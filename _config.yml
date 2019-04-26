@@ -8,8 +8,8 @@ logo:               'assets/img/light-bulb-logo.png'
 background:         'assets/img/desktop-white-bg.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url               :  https://kyounghwan01.github.io/test
-repository        : "Kyounghwan01/test"
+url               :  https://kyounghwan01.github.io/lala
+repository        : "Kyounghwan01/lala"
 
 
 
