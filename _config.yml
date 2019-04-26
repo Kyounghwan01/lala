@@ -4,8 +4,9 @@ bio:                "do my best!"
 description:        "항상 성장하고 공부하는 개발자"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/light-bulb-logo.png'
-background:         'assets/img/desktop-white-bg.jpg'
+logo:               'assets/img/logo.png'
+background:         'assets/img/placeholder-big.jpg'
+#'assets/img/desktop-white-bg.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url               :  https://kyounghwan01.github.io/lala
@@ -29,7 +30,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   https-kyounghwan01-github-io-test
+disqus_shortname:   https-kyounghwan01-github-io-lala
 
 # Social
 # if you don't have any of social below, comment the line.
