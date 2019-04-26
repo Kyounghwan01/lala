@@ -5,11 +5,11 @@ date:   2019-03-02
 excerpt: "블록체인 하이퍼레저 기반 건물안전등급 등록 및 조회 앱*"
 project: true
 tag:
-- jekyll 
-- moon
-- blog
-- about
-- theme
+- blockchain
+- hyperledger
+- node.js
+- mongodb
+- react-native
 comments: false
 ---
 
