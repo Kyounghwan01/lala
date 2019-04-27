@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[JavaScript] getElementbyid() 함수"
+title: "[JavaScript] getElementbyId() 함수"
 date: 2019-04-27
 excerpt: "getElementbyId 사용법!"
 tag:
