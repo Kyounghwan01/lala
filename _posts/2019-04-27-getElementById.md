@@ -6,7 +6,7 @@ excerpt: "getElementbyid"
 tag:
 - JavaScript
 category: [JavaScript]
-feature: https://kyounghwan01.github.io/assets/img/title/bj_title.jpg
+feature: https://kyounghwan01.github.io/lala/assets/img/title/bj_title.jpg
 comments: false
 
 
