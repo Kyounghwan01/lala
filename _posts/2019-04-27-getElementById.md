@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[JavaScript] getElementbyid"
+title: "[JavaScript] getElementbyid() 함수"
 date: 2019-04-27
-excerpt: "getElementbyid"
+excerpt: "getElementbyId 사용법!"
 tag:
 - JavaScript
 category: [JavaScript]
@@ -12,66 +12,102 @@ comments: false
 
 ---
 
+## getElementbyId
 
+태그에 있는 id 속성을 사용하여 해당 태그에 접근하여 하고 싶은 작업을 할 때 쓰는 함수입니다!
 
-### 문제 이해
+해당 id가 없는 경우 null 에러가 발생합니다. 
 
-단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다. 마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, **완주하지 못한 선수의 이름**을 return 하도록 solution 함수를 작성해주세요.
-
-
-
-### 문제 해결 방법 구상
-
-1. 명단과 완주자의 이름  순서 값이 다르므로 이를 맞추기 위해 오름차순으로 두 배열을 정렬합니다.
-2. 명단 배열을 for문 통해 검사하고 for문 안에서는 명단과 완주자의 이름이 같은지 체크하며 다를 시 그 값을 answer로 return 합니다.
+예시로 살펴보겠습니다
 
 
 
-### 코드 구현
+## 예시
+
+버튼을 누르면 버튼 글자가 바뀌는 스크립트입니다. 
+
+html
+
+```html
+<button id="jsmode">바껴라</button>
+```
+
+js
+
+```js
+const mode = document.getElementById("jsmode");
+mode.addEventListener("click", function() {
+  if (mode.innerText == "바껴라") {
+    mode.innerText = "??";
+  } else {
+    mode.innerText = "바껴라";
+  }
+});
+    
+```
+
+위와 같이 버튼은 "jsmode"라는 Id를 찾도록 "getElementById"함수를 사용합니다.
+
+이후 addEventListener함수를 통해 클릭시 innerText가 "??"로 바뀌도록 합니다. 
+
+<br>
+
+두번째는 배경색 흑,백으로 theme을 적용하는 스크립트입니다
+
+html
+
+```html
+<body id="target" class="white">
+  <div id="control">
+    <input type="button" value="white" id="white_btn" />
+    <input type="button" value="black" id="black_btn" />
+    <input type="button" value="border" id="border_btn" />
+  </div>
+</body>
+```
+
+css
+
+```css
+body.black {
+  background-color: black;
+  color: white;
+}
+body.white {
+  background-color: white;
+  color: black;
+}
+body.border{
+  border: 2px solid red;
+}
+```
+
+js
 
 ```javascript
-function solution(participant, completion) {
-  var participant = ["mislav", "stanko", "mislav", "ana"];
-  var completion = ["stanko", "ana", "mislav"];
-  var answer = "";
+wbtn = document.getElementById("white_btn");
+wbtn.addEventListener("click", function() {
+  document.getElementById("target").className = "white";
+});
 
-    for(var i=0;i<participant.length;i++){
-        if(participant[i]>participant[i+1]){
-            var temp =participant[i];
-            participant[i]=participant[i+1];
-            participant[i+1]=temp;
-            i=-1;
-        }
-    }
-    for(var i=0;i<completion.length;i++){
-        if(completion[i]>completion[i+1]){
-            var temp =completion[i];
-            completion[i]=completion[i+1];
-            completion[i+1]=temp;
-            i=-1;
-        }
-    }
-    //participant.sort(); completion.sort();
-    for(var i=0;i<participant.length;i++){
-        if(participant[i]!==completion[i]){
-            answer = participant[i]      
-            break;
-        }
-    }
-    console.log(typeof(answer));
-  return answer;
-}
+bbtn = document.getElementById("black_btn");
+bbtn.addEventListener("click", function() {
+  document.getElementById("target").className = "black";
+});
 
-solution();
+borderbtn=document.getElementById('border_btn');
+borderbtn.addEventListener("click",function(){
+  document.getElementById('target').classList.add("border");
+})
 ```
 
-### 결과분석
+Html 바디 안에 버튼을 넣어서 클릭하면 배경이 바뀌도록 했고 3번째 border 바디에 테두리를 만드는 css 입니다. 
 
-바닐라코드 짜는 것을 우선으로 하기 위해 코드의 효율성 보다는 최대한 원시적인 방법으로 구현하였습니다.
+wbtn는 getElementById함수를 통해 "white_btn"를 버튼에서 가져오게 되고, addEventListener를 통해 클릭시<br> "target"이라는 id를 가진 body태그에 "white" class를 추가합니다.
 
-```
-"mislav"
-```
+bbtn도 위와 동일합니다.
 
+마지막 border는 클래스를 추가할 경우 사용하는 방법입니다.
 
+id를 가져와서 바디에 적용하는 방식은 동일하고, 추가된 className를 바꾸지 않고 한번더 추가 할 경우<br> classList.add("클래스 이름"); 으로 추가 할 수 있습니다. 
 
