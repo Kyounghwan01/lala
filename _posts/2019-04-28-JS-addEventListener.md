@@ -12,7 +12,7 @@ comments: false
 
 ---
 
-### addEventListener
+## addEventListener
 
 <strong>addEventListener()</strong>는 document의 **특정요소**(Id,class,tag 등등..) **event**(ex - click하면 함수를 실행하라, 마우스를 올리면 함수를 실행하라 등등.. )를 등록할 때 사용합니다.
 
@@ -20,7 +20,7 @@ comments: false
 
 
 
-### 예시
+## 예시
 
 버튼을 누르면 버튼에 적힌 값이 alert창으로 뜨는 스크립트입니다.
 
@@ -52,7 +52,7 @@ function click(e){
 
 위와 같이 작성하면 버튼 추가시에도 똑같은 코드를 재작성 할 필요 없이 자동으로 이벤트가 등록됩니다.
 
-### 자주 사용하는 이벤트의 종류
+## 자주 사용하는 이벤트의 종류
 
 - **click** – 마우스버튼을 클릭하고 버튼에서 손가락을 떼면 발생한다.
 - **mouseover** – 마우스를 HTML요소 위에 올리면 발생한다.
