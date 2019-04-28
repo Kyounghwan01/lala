@@ -39,9 +39,10 @@ comments: false
 ```js
 var cols = document.querySelectorAll('#cols .btn'); 
  
-[].forEach.call(cols,function(col){
-    col.addEventListener("click",click,false);
-});
+for(var i=0; i<cols.length;i++){
+    cols[i].addEventListener("click",click);
+}
+cols[1].style.color="red";
  
 function click(e){
     window.alert(this.innerHTML);
@@ -49,6 +50,7 @@ function click(e){
 ```
 
 위의 예제는 querySelectorAll 함수를 이용해 div안의 id 값 'cols'와 button의 class값 'btn '값을 가져온 후, 반복문을 사용하여 해당하는 모든 값에 addEventListener를 지정해 클릭시 click함수를 실행하도록 하는 스크립트입니다.
+또한 1번 배열의 색을 "red"로 지정함으로 .btn 1번 값인 B가 붉은색으로 변화한 것을 보실 수 있습니다.
 
 위와 같이 작성하면 버튼 추가시에도 똑같은 코드를 재작성 할 필요 없이 자동으로 이벤트가 등록됩니다.
 
