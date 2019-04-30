@@ -8,7 +8,7 @@ tag:
 - jekyll
 category: [ Jekyll 블로그 ]
 feature: ../assets/img/title/basic.jpg
-comments: true
+comments: false
 ---
 
 <figure class="half">
