@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Vanillacoding] Primitive / Reference"
+title: "[JavaScript][Vanillacoding] Primitive / Reference"
 date: 2019-04-30
 excerpt: "2_week_Mon"
 tag:
