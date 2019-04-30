@@ -1,3 +1,3 @@
-# Allow crawling of all content
 User-agent: *
-Allow:
+Allow: /
+Sitemap: https://kyounghwan01.github.io/lala/sitemap.xml
