@@ -33,7 +33,7 @@ var interval = setInterval(function(){console.log("Interval")},1000);
 clearInterval(interval);
 ```
 ```js
-setInterval(function(){
+var interval = setInterval(function(){
     count++;
     if(count === 10){
         clearInterval(interval);
