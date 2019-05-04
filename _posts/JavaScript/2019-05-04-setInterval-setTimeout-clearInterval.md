@@ -45,4 +45,11 @@ setTimeout(function(){
   console.log('oneTime');
 },5000);
 ```
-
+```
+setInterval(function(){
+    count++;
+    if(count === 10){
+        clearInterval(interval);
+    }
+}, 3000)
+```
