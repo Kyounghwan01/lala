@@ -45,7 +45,7 @@ setTimeout(function(){
   console.log('oneTime');
 },5000);
 ```
-```
+```js
 setInterval(function(){
     count++;
     if(count === 10){
