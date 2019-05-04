@@ -32,6 +32,14 @@ var interval = setInterval(function(){console.log("Interval")},1000);
 //인자로 함수 이름 넣어줍니다. 
 clearInterval(interval);
 ```
+```js
+setInterval(function(){
+    count++;
+    if(count === 10){
+        clearInterval(interval);
+    }
+}, 3000)
+```
 
 
 
@@ -45,11 +53,4 @@ setTimeout(function(){
   console.log('oneTime');
 },5000);
 ```
-```js
-setInterval(function(){
-    count++;
-    if(count === 10){
-        clearInterval(interval);
-    }
-}, 3000)
-```
+
