@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "[Javascript]carousel-project"
+title:  "[JavaScript]carousel-project"
 date:   2019-05-05
 excerpt: "라이브러이 없이 바닐라 js만 사용한 회전목마 ui"
 project: true
 tag:
-- Javascript
+- JavaScript
 - CSS
 - HTML
 comments: false
