@@ -2,7 +2,6 @@
 layout: project
 title: carousel-project
 excerpt: "라이브러이 없이 바닐라 js만 사용한 회전목마 ui"
-feature: https://kyounghwan01.github.io/lala/assets/img/title/bj_title.jpg
 comments: false
 ---
 
