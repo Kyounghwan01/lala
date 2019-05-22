@@ -46,11 +46,23 @@ var interval = setInterval(function(){
 ## setTimeout
 
 **setTimeout()** 함수는 일정시간이 지난 후 인자로 받은 함수를 **한번** 실행해주는 메소드입니다.
+함수 실행 후 return 값으로 상수를 리턴합니다(1). 함수 실행 때 마다 1씩 추가되어 리턴합니다. 
+응용 : setTimeout의 리턴 값이 상수, 상수는 true 값을 이용하여 setTimeout의 조건을 넣을 수 있다. 
 
 ```js
 //5초 후에 oneTime이라는 string를 콘솔에 1번 찍고 종료합니다. 
 setTimeout(function(){
   console.log('oneTime');
 },5000);
+
+self.scrollState = false;
+if (!self.scrollState) {
+     self.mainElem.classList.add("running");
+   }
+   self.scrollState = setTimeout(function() {
+   self.mainElem.classList.remove("running");
+    }, 500);
+    //setTimeout이 실행되면 상수를 리턴 함으로 true로 바뀐다.
+      
 ```
 
