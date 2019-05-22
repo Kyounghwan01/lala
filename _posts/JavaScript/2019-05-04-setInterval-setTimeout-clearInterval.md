@@ -45,8 +45,8 @@ var interval = setInterval(function(){
 
 ## setTimeout
 
-**setTimeout()** 함수는 일정시간이 지난 후 인자로 받은 함수를 **한번** 실행해주는 메소드입니다.
-함수 실행 후 return 값으로 상수를 리턴합니다(1). 함수 실행 때 마다 1씩 추가되어 리턴합니다. 
+**setTimeout()** 함수는 일정시간이 지난 후 인자로 받은 함수를 **한번** 실행해주는 메소드입니다.<br>
+함수 실행 후 return 값으로 상수를 리턴합니다(1). 함수 실행 때 마다 1씩 추가되어 리턴합니다. <br>
 응용 : setTimeout의 리턴 값이 상수, 상수는 true 값을 이용하여 setTimeout의 조건을 넣을 수 있다. 
 
 ```js
