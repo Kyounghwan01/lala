@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JavaScript] 객체와 변경불가성 (immutability) "
-date: 2019-05-29
+date: 2019-06-01
 excerpt: "Object.assign , Object.freeze"
 tag:
 - JavaScript
