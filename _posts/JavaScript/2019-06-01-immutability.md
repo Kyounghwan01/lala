@@ -56,7 +56,7 @@ p1 === p2 // true
 
 
 
-그러나 ` reference` 타입인 `Object` 는 `mutable value` 라 부르며 위와 다른 결과를 가집니다.
+그러나 `reference` 타입인 `Object` 는 `mutable value` 라 부르며 위와 다른 결과를 가집니다.
 
 ```js
 var o1 = {name : 'kim'}
