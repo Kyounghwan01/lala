@@ -13,7 +13,6 @@ comments: false
 
 ---
 
-##  
 
 ## 문제 이해
 
