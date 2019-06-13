@@ -240,7 +240,7 @@ comments: false
 
 ### JavsScript
 
-1. Data 생성
+- Data 생성
 
 ```js
 const DATA = [
@@ -304,7 +304,7 @@ const DATA = [
 ];
 ```
 
-2. HTML `tag` 및 `class` 가져오기
+- HTML `tag` 및 `class` 가져오기
 
 ```js
 const $tbody = document.querySelector("tbody");
@@ -312,7 +312,7 @@ const $dl = document.querySelector("dl");
 const $languageTitle = document.querySelector(".language");
 ```
 
-3. DATA 활용 `DOM` 만들기
+- DATA 활용 `DOM` 만들기
 
 ```js
   DATA.forEach(function(data) {
@@ -330,7 +330,7 @@ const $languageTitle = document.querySelector(".language");
   });
 ```
 
-4. 클릭 이벤트
+- 클릭 이벤트
 
 ```js
   $tr.addEventListener("click", function() {
