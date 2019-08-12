@@ -1,5 +1,4 @@
 ---
-​---
 layout: post
 title: "[코드리뷰] react 기본"
 date: 2019-08-12
@@ -9,9 +8,6 @@ tag:
 category: [코드리뷰]
 feature: https://kyounghwan01.github.io/lala/assets/img/title/bj_title.jpg
 comments: false
-
-
-​---
 
 
 ---
