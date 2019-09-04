@@ -6,7 +6,6 @@ excerpt: "node.js 기본"
 tag:
 - JavaScript
 - Vanillacoding
-- nodeJS
 category: [Ajax] 
 feature: https://kyounghwan01.github.io/lala/assets/img/title/bj_title.jpg
 comments: false
