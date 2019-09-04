@@ -4,8 +4,8 @@ title: "node기본"
 date: 2019-09-04
 excerpt: "node기본"
 tag:
-- nodeJS
-category: [nodeJS]
+- Ajax
+category: [Ajax]
 feature: https://kyounghwan01.github.io/lala/assets/img/title/bj_title.jpg
 comments: false
 
