@@ -1,0 +1,108 @@
+---
+layout: post
+title: "node.js tutorial"
+date: 2019-09-02
+excerpt: "node.js 기본"
+tag:
+- JavaScript
+- Vanillacoding
+- nodeJS
+category: [nodeJS] 
+feature: https://kyounghwan01.github.io/lala/assets/img/title/bj_title.jpg
+comments: false
+
+
+
+
+
+---
+
+## Node
+
+### 개발배경
+
+> 이전 JavaScript는 브라우저에서만 실행 됬었다.<br>
+>
+> 구글이 V8 엔진을 오픈소스로 공개한 후, V8엔진을 기반으로 node.js가 만들어졌고 그러므로 브라우저 이외의 환경에서도 JavaScript를 실행할 수 있게 되었다.
+>
+> 브라우저에서 제공하는 API(setTimeout, fetch, fs ...)도 node.js global에서 자체 구축하여 사용할 수 있다.<br>
+> 이것이 의미하는 바는 node.js만으로 파일시스템을 구축하수 있다는 의미가 되고, 그것은 서버를 만들수 있다는 의미가 된다.<br>
+>
+> 또한 서버를 만든다는 것은 DB와의 연결을 가능하게 하였고, 
+> 결론적으로 클라이언트 및 서버를 연결하는데 node.js가 결정적인 역할을 하게 되었다.
+
+### node.js 장점
+
+1. 빠르다
+2. 서버를 구축한다
+3. 프론트와 백엔드를 같은 언어로 만든다.
+
+
+
+### node.js 기본적인 사용법
+
+> 대부분 node.js + express를 사용하여 서버를 구축하지만 기본적인 node.js의 사용법을 짚고 넘어가도록 하자
+
+맨처음 모듈을 불러올때는 node.js에서는 import가 아니라 require를 사용해야한다.<br>
+
+```js
+var http = require('http');
+
+var fs = require('fs');
+//file system
+
+http.createServer(function(req,res){
+  res.end('hello');
+}).listen(8080);
+
+console.log("server running at http://127.0.0.1:8080/");
+```
+
+`node app.js`을 통해 서버를 구동하고 수정하면 수정시 마다 서버를 껏다 켜야한다.<br>
+그것은 개발에 매우 비효율 적이니 `yarn add nodemon`을 하자!<br>
+`nodemon`을 사용하면 수정하면 새로이 빌드된다.<br>
+
+### global
+
+node.js에는 윈도우가 없는 대신 global 객체가 있다.<br>
+이 global에는 `setTimeout`, `fetch`등 서버에 필요한 API가 있다.<br>
+그러나 작업하는 파일에서 글로벌 scope에 변수를 선언하더라도 global 객체에 선언되지 않는다.
+
+```js
+console.log(global);
+```
+
+
+
+### Module
+
+`export` <br>
+
+모듈을 다른 파일로 내보낼 때는 `Module.exports`를 사용해서 내보낸다.
+
+```js
+const User = mongoose.model("User", userSchema);
+
+module.exports = User;
+```
+
+`require`<br>
+
+파일을 읽어올때는 `require`를 사용하여 읽어온다.
+
+```js
+let User = require("../models/user.model");
+```
+
+
+
+### debugger
+
+node.js에서 하기 쉬운 debug는 `node-inspect`을 사용하는 것이다.
+
+```js
+yarn global add node-inspect
+```
+
+
+
