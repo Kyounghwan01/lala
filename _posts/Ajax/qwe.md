@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "node기본"
+title: "[node] node기본"
 date: 2019-09-04
 excerpt: "node기본"
 tag:
