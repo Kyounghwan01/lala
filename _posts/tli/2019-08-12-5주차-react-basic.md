@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[코드리뷰] react 기본"
+title: "[코드리뷰] react basic"
 date: 2019-08-12
 excerpt: "5주차 과제 코드리뷰"
 tag:
