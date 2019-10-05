@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[] finalTest : Random-chatting-app"
+title: "[과제정리] finalTest : Random-chatting-app"
 date: 2019-10-05
 excerpt: "react, redux, sock-io 등등 배운 원리들을 이용하여 랜덤채팅 만들기"
 tag:
