@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Vanillacoding] front : 채팅 어플리케이션"
+title: "[과제정리] frontTest : 채팅 어플리케이션"
 date: 2019-09-07
 excerpt: "react, react-router, redux 과제 리뷰"
 tag:
