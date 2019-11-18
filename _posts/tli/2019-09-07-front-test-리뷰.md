@@ -115,3 +115,27 @@ Chat.propTypes = {
 };
 
 ```
+
+
+
+
+## redux
+
+> Reduce + flux 
+>
+> reduce는 보통 아는 그 reduce 함수로 initstate가 있으면 accumulator 에 의해 state가 더해지는 형식이다.<br>flux 패턴은 단방향으로 이어지는 데이터 흐름을 말하며 view 단에서 액션을 발생하면 액션은 store에서 state를 가져오고 dispatch를 통해 reducer에 정의된 흐름에 따라 state가 변화하고 다시 store에 저장되는 패턴
+>
+> redux를 구현하고 실행하는 것은 finaltest 리뷰에서 다루겠다.
+
+react hook에서 `useReduce`를 이용하면 더 쉽게 state를 관리 할 수 있다.
+
+#### Side effect
+
+redux를 통해 state를 관리하던 중 api호출하거나, 데이터를 db에 저장하거나 다른 행위를 할 경우를 `side effect`라고 부르는데 이것을 관리하기위해 `react-saga`가 있다고 한다. 사용해보지 않아서 어떻게 뭐가 좋은지는 잘 모르겠다. 
+
+#### redux test
+
+나는 jest를 이용하여 테스트를 하였다 
+
+1. initstate가 제대로 들어가는지
+2. reducer 함수를 통해 action이 발생 했을때, initstate가 원하는 state로 변경이 되었는지
