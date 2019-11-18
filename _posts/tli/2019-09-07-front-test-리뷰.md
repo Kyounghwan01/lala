@@ -198,7 +198,7 @@ export default class App extends Component {
           <Route 
             path='articles'
             render={() => (
-              <Articles onConsole={this.onConsole}/>}
+              <Articles onConsole={this.onConsole}/>)}
         //위에 정의된 onConsole 함수를 왼쪽의 이름으로 컴포넌트로 props를 내려준다.
         //Articles 컴포넌트에서 this.props.onConsole()로 사용 가능하다.
 	         />
