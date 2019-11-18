@@ -116,6 +116,101 @@ Chat.propTypes = {
 
 ```
 
+6. react-hook
+
+> Final-test 과제리뷰에 상세히 적어 놓음
+
+7. react component test
+
+> enzyme 를 이용하였다
+
+1. component가 제대로 렌더링 되는지
+
+```javascript
+import React from 'react';
+import { configure, mount } from 'enzyme';
+import Main from './Main';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
+
+//componentDidMount의 함수는 mock함수로 정의해야 한다.
+const actions = {
+    username: [{ username: '' }]
+  };
+  const userActions = {
+    username: [{ username: 'nkh' }]
+  };
+  const connected = jest.fn();
+
+
+ const component = mount(
+    <Main
+      username={actions.username}
+      reseiveMessage={connected}
+      connected={connected}
+    />
+  );
+```
+
+2. 컴포넌트가 렌더링 됬다면, 내부에 원하는 element가 배치되었는지 체크
+3. 함수가 실행되었는지 체크
+   1. toBeCalled();
+4. 버튼을 눌렀을 때 원하는 방향이 이루어 지는지 체크 
+5. 등등 컴포넌트의 기능에 따라 확장 가능
+
+
+
+## react-router
+
+> url을 통한 화면 전환
+
+### 사용법
+
+1. `yarn add react-router-dom`
+2. 가장 메인이 되는 파일 (`App.js or index.js`)에서 `router` 정의
+
+```javascript
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from './routes/Home';
+import Articles from './routes/Articles';
+import ArticlesTitle from './routes/ArticlesTitle';
+
+export default class App extends Component {
+  onConsole = () => {
+		console.log("hello!")
+  };
+
+  render(){
+    return(
+    	<Router>
+      	<Switch>{/* Switch : route 변화 감지 (link하여 route이동하려면 필수) */}
+          <Route exect path='/' component={Home} />
+          {/*
+          http://localhost:3000/에 접속시 Home 화면 렌더링
+          exect : url이 정확히 path가 일치할 때만 컴포넌트를 렌더링 한다.
+          */}
+          <Route 
+            path='articles'
+            render={() => (
+              <Articles onConsole={this.onConsole}/>)}
+        //위에 정의된 onConsole 함수를 왼쪽의 이름으로 컴포넌트로 props를 내려준다.
+        //Articles 컴포넌트에서 this.props.onConsole()로 사용 가능하다.
+	         />
+          <Route 
+            path='articles/:id'
+            render={props => (
+              <ArticlesTitle {...props}/>
+       //ArticlesTitle로 들어오는 props을 받기 위해 위와 같이 쓴다.
+            )}
+           />
+        </Switch>
+      </Router>
+    )
+  }
+}
+```
+
 
 
 
