@@ -44,7 +44,7 @@ comments: false
 >
 > 그럴때 `setState` 의 callback 함수를 이용하면 된다.
 
-```jsx
+```javascript
 this.setState({ howToSort: 'asc' })
 //이렇게 정의하면 asc, 오름차순으로 정렬 state가 바뀌기는 하나 render가 원하는 방향으로 되지 않는다. 그래서
 this.setState({ howToSort: 'asc' }, () => {
@@ -60,7 +60,7 @@ this.setState({ howToSort: 'asc' }, () => {
 >
 > 예를 들면 스크롤 감지에 대한 내용이다. 
 
-```jsx
+```javascript
 export default class App extends Component {
   componentDidMount(){
     window.addEventListener('scroll', scrollFunc);
@@ -86,7 +86,7 @@ useEffect(() => {
 
 3. data를 불러오는 `fetch`, `axios`의 경우 `async/await`를 활용하면 보기 쉬운 코드로 만들 수 있다.
 
-```js
+```javascript
 return fetch(`/api/v1/articles...`).then(res => res.json())
         .then(data => {
           this.setState({ listData: data.posts });
@@ -111,7 +111,7 @@ this.setState({listData: fetchDataJson.posts});
 
 > 컴포넌트의 prop이 어떤 자료형태인지 기술한다 (오류 방지)
 
-```jsx
+```javascript
 import PropTypes from "prop-types";
 
 Chat.propTypes = {
@@ -131,7 +131,7 @@ Chat.propTypes = {
 
 1. component가 제대로 렌더링 되는지
 
-```jsx
+```javascript
 import React from 'react';
 import { configure, mount } from 'enzyme';
 import Main from './Main';
@@ -175,7 +175,7 @@ const actions = {
 1. `yarn add react-router-dom`
 2. 가장 메인이 되는 파일 (`App.js or index.js`)에서 `router` 정의
 
-```jsx
+```javascript
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './routes/Home';
 import Articles from './routes/Articles';
@@ -220,7 +220,7 @@ export default class App extends Component {
 
 > `Link` or `NavLink` 사용
 
-```jsx
+```javascript
 //link에 스타일주기 + 원하는 route로 이동 + 이동하는 route에 props 주기
 <NavLink
   to={{
@@ -246,7 +246,7 @@ export default class App extends Component {
 
 > `Redirect` 사용
 
-```js
+```javascript
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 
