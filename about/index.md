@@ -11,7 +11,7 @@ comments: false
 
 ### 블로그
 * Vanillacoding-prep 강의 정리<br/>
-* TLI(Today I learn)
+* TLI
 * 알고리즘 공부와 문제 풀이 <br/>
 (알고리즘 문제 사이트: <a href = "https://programmers.co.kr/">프로그래머스</a>, <a href="https://www.codewars.com/">코드워즈</a>)
 * vue 공부한 것들.. <br/>
