@@ -15,16 +15,8 @@ comments: false
 (알고리즘 문제 사이트: <a href = "https://programmers.co.kr/">프로그래머스</a>, <a href="https://www.codewars.com/">코드워즈</a>)
 * vue 공부한 것들.. <br/>
 
-## 교육
 
-#### 블록체인 기반의 산업 적용 비즈니스 모델 개발자 양성과정
-    기간 : 2018.09.03 ~ 2019.02.28
-    
-    과정 : 블록체인 이론, 비트코인, 이더리움, 하이퍼레저, JavaScript
-    
-    참고 : http://www.wtbi.or.kr/main/
-
-#### Vanlinacoding 부트캠프 
+### 바닐라코딩 부트캠프 
     기간 : 2019.04 ~ 2019.11
     
     과정 : JavaScript, react, redux, nodeJS
@@ -36,7 +28,7 @@ comments: false
 <a href = "https://github.com/Kyounghwan01/mata-dream-app">한강공원 자리 선점 앱 (client)</a>
 <a href = "https://github.com/Kyounghwan01/mata-dream-server">한강공원 자리 선점 앱 (server)</a>
 
-## 수상
+### 수상
 
 #### 1. 블록체인 기반 산업적용 비즈니스 모델 개발(19.02.28 최우수)
     포지션 : react-native ui 앱 개발, node.js 백엔드 
